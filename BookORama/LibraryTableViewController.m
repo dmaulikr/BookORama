@@ -38,8 +38,6 @@
     
     NSURLSessionDataTask *dataTask = [[NSURLSession sharedSession] dataTaskWithURL: url completionHandler: ^(NSData *data, NSURLResponse *response, NSError *error ) {
         
-//        [[NSOperationQueue mainQueue] addOperationWithBlock:^ {
-        
             if (error == nil) {
                 // json to dictionary
                 NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
@@ -60,11 +58,11 @@
                     NSLog(@"%@ - %@", title, author);
                 }
             }
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.arrayOfBooks addObject:buzzbeez];
-            [self.tableView reloadData];
-        });
-//        }];
+            // add book objects to arrayOfBooks
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.arrayOfBooks addObject:buzzbeez];
+                [self.tableView reloadData];
+            });
     }];
     [dataTask resume];}
 
@@ -103,7 +101,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 90;
+    return 65;
 }
 
 /*

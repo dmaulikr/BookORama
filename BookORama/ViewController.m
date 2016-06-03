@@ -37,7 +37,7 @@
 
 - (void) spinAndMoveStackView {
     CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    rotationAnimation.toValue           = @(M_PI * 2.0); /* full rotation*/
+    rotationAnimation.toValue = @(M_PI * 2.0); /* full rotation*/
     
     CABasicAnimation *moveAnimation = [CABasicAnimation animationWithKeyPath:@"position"];
     moveAnimation.fromValue = [NSValue valueWithCGPoint:CGPointMake(-10,-10)];
@@ -45,7 +45,7 @@
     
     CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
     animationGroup.animations        = @[rotationAnimation, moveAnimation];
-    animationGroup.duration          = 3.0;
+    animationGroup.duration          = 1.0;
     animationGroup.repeatCount       = 1.0;
     animationGroup.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
     animationGroup.fillMode = kCAFillModeForwards;

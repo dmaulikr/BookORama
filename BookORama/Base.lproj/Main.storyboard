@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rkB-Am-E8u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rkB-Am-E8u">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -30,8 +30,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DMF-Yd-DtZ">
                                 <rect key="frame" x="69" y="95" width="463" height="485"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Book-O-Rama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nka-zR-7c5">
-                                        <rect key="frame" x="82" y="0.0" width="299" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to Book-O-Rama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nka-zR-7c5">
+                                        <rect key="frame" x="83" y="0.0" width="299" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -42,7 +42,7 @@
                                             <constraint firstAttribute="width" secondItem="EMp-EW-vZ5" secondAttribute="height" multiplier="211:229" id="xN1-bR-M0q"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click me!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3d-od-9pl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click me!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3d-od-9pl">
                                         <rect key="frame" x="200" y="300" width="64" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -103,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="1194" y="437"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Library-->
         <scene sceneID="w9H-fX-fh6">
             <objects>
                 <tableViewController id="P1x-TE-Fog" customClass="LibraryTableViewController" sceneMemberID="viewController">
@@ -116,7 +116,7 @@
                             <outlet property="delegate" destination="P1x-TE-Fog" id="9LC-oX-HaT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="leY-sF-YcF"/>
+                    <navigationItem key="navigationItem" title="Library" id="leY-sF-YcF"/>
                     <connections>
                         <segue destination="KWs-KX-JfF" kind="show" identifier="showContext" id="PPd-ZO-tFv"/>
                     </connections>
@@ -137,13 +137,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3mx-pj-Yxg">
-                                <rect key="frame" x="180" y="112" width="240" height="240"/>
-                                <color key="backgroundColor" red="0.088402785360813141" green="0.74739795923233032" blue="0.69189202785491943" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="3mx-pj-Yxg" secondAttribute="height" multiplier="1:1" id="AkE-Kc-h2K"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XH-61-mby">
                                 <rect key="frame" x="496" y="562" width="84" height="30"/>
                                 <state key="normal" title="Next Page &gt;"/>
@@ -152,23 +145,30 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Page contents" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OD5-UR-f1u">
-                                <rect key="frame" x="24" y="360" width="552" height="128"/>
+                                <rect key="frame" x="24" y="452" width="552" height="102"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="OD5-UR-f1u" secondAttribute="height" multiplier="69:16" id="ik0-Cs-7pE"/>
+                                    <constraint firstAttribute="width" secondItem="OD5-UR-f1u" secondAttribute="height" multiplier="69:16" constant="112.125" id="ik0-Cs-7pE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3mx-pj-Yxg">
+                                <rect key="frame" x="150" y="112" width="300" height="300"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3mx-pj-Yxg" secondAttribute="height" multiplier="1:1" id="AkE-Kc-h2K"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OD5-UR-f1u" firstAttribute="leading" secondItem="3mx-pj-Yxg" secondAttribute="trailing" constant="-396" id="3pv-Tn-3n3"/>
                             <constraint firstItem="8tv-hT-fFv" firstAttribute="top" secondItem="1XH-61-mby" secondAttribute="bottom" constant="8" id="RN5-9P-82o"/>
                             <constraint firstItem="3mx-pj-Yxg" firstAttribute="centerX" secondItem="WWU-Fd-70R" secondAttribute="centerX" id="bu0-zK-mNU"/>
-                            <constraint firstItem="OD5-UR-f1u" firstAttribute="top" secondItem="3mx-pj-Yxg" secondAttribute="bottom" constant="8" id="ekV-eW-QwV"/>
+                            <constraint firstItem="OD5-UR-f1u" firstAttribute="top" secondItem="3mx-pj-Yxg" secondAttribute="bottom" constant="40" id="ekV-eW-QwV"/>
                             <constraint firstItem="3mx-pj-Yxg" firstAttribute="top" secondItem="wd7-au-YgV" secondAttribute="bottom" constant="48" id="k67-fe-u4c"/>
-                            <constraint firstItem="3mx-pj-Yxg" firstAttribute="width" secondItem="WWU-Fd-70R" secondAttribute="width" multiplier="2:5" id="lvf-hW-tp4"/>
+                            <constraint firstItem="3mx-pj-Yxg" firstAttribute="width" secondItem="WWU-Fd-70R" secondAttribute="width" multiplier="2:5" constant="60" id="lvf-hW-tp4"/>
                             <constraint firstItem="OD5-UR-f1u" firstAttribute="leading" secondItem="WWU-Fd-70R" secondAttribute="leadingMargin" constant="4" id="oCU-OZ-9Jl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OD5-UR-f1u" secondAttribute="trailing" constant="4" id="r4g-Ji-qvZ"/>
                             <constraint firstItem="OD5-UR-f1u" firstAttribute="centerX" secondItem="WWU-Fd-70R" secondAttribute="centerX" id="wac-D7-Rou"/>

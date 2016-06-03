@@ -25,19 +25,8 @@
 
 
 - (void)displayBookData {
-//    NSLog(@"%@",self.book.bookContextImages[self.counter]);
-//    NSURL *url = [NSURL URLWithString:self.book.bookContextImages[self.counter]];
-//    NSData *data = [[NSData alloc] initWithContentsOfURL: url];
+    
     self.imagesArray = [NSArray arrayWithObjects: [UIImage imageNamed:@"image1"], [UIImage imageNamed:@"image2"], [UIImage imageNamed:@"image3"], [UIImage imageNamed:@"image4"], [UIImage imageNamed:@"image5"], [UIImage imageNamed:@"image6"], [UIImage imageNamed:@"image7"], nil];
-    //    NSArray * imagesArray = [[NSArray alloc]initWithObjects:[UIImage imageNamed:@"image1"], [UIImage imageNamed:@"image2"], [UIImage imageNamed:@"image3"], [UIImage imageNamed:@"image4"], [UIImage imageNamed:@"image5"], [UIImage imageNamed:@"image6"], [UIImage imageNamed:@"image7"], nil];
-    
-
-    
-                                    
-                                    
-                                    
-//                                    ]WithObjects: [UIImage imageNamed:@"image1"], [UIImage imageNamed:@"image2"], [UIImage imageNamed:@"image3"], [UIImage imageNamed:@"image4"], [UIImage imageNamed:@"image5"], [UIImage imageNamed:@"image6"], [UIImage imageNamed:@"image7"], nil];
-//    NSArray * imagesArray = [[NSArray alloc]initWithObjects:[UIImage imageNamed:@"image1"], [UIImage imageNamed:@"image2"], [UIImage imageNamed:@"image3"], [UIImage imageNamed:@"image4"], [UIImage imageNamed:@"image5"], [UIImage imageNamed:@"image6"], [UIImage imageNamed:@"image7"], nil];
     
     self.picture.image = self.imagesArray[self.counter];
     self.pageText.text  = self.book.contentText[self.counter];

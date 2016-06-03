@@ -12,7 +12,10 @@
 
 - (NSArray *)parseBook:(Book *)book {
     
-    NSString * bookAPI = [[NSString alloc] initWithContentsOfFile:[NSString stringWithFormat:@"/Users/adityanarayan/dev/ttt/Objective-C/Hackathon/BookORama/BookORama/%@.csv", book.title] encoding:NSUTF8StringEncoding error:nil];
+    NSBundle *myBundle = [NSBundle mainBundle];
+    NSString *myCSV = [myBundle pathForResource:@"BuzzyBee" ofType:@"csv"];
+    
+    NSString * bookAPI = [[NSString alloc] initWithContentsOfFile:myCSV encoding:NSUTF8StringEncoding error:nil];
     
     NSArray * rows = [bookAPI componentsSeparatedByString:@"\n"];
     
