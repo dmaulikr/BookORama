@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rkB-Am-E8u">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +19,140 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="RXG-ne-fcm">
+                                <rect key="frame" x="540" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="V3B-To-rAH"/>
+                                    <constraint firstAttribute="height" constant="40" id="cXv-Vm-Bcv"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DMF-Yd-DtZ">
+                                <rect key="frame" x="69" y="95" width="463" height="485"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Book-O-Rama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nka-zR-7c5">
+                                        <rect key="frame" x="82" y="0.0" width="299" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book-O-Rama Logo" translatesAutoresizingMaskIntoConstraints="NO" id="EMp-EW-vZ5">
+                                        <rect key="frame" x="126" y="51" width="211" height="229"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="EMp-EW-vZ5" secondAttribute="height" multiplier="211:229" id="xN1-bR-M0q"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click me!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3d-od-9pl">
+                                        <rect key="frame" x="200" y="300" width="64" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rZz-8U-MER">
+                                        <rect key="frame" x="0.0" y="339" width="463" height="92"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rZz-8U-MER" secondAttribute="height" multiplier="463:92" id="kCu-BR-hX0"/>
+                                        </constraints>
+                                        <string key="text">Book-O-Rama lets you interact with your favorite books in a whole, new way. Click below to view the library of books to choose from and tap, pinch, and rotate to your heart's content! To filter the library click on settings up top.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MA-U4-5YM">
+                                        <rect key="frame" x="170" y="451" width="123" height="34"/>
+                                        <color key="backgroundColor" red="0.088402785360813141" green="0.74739795923233032" blue="0.69189202785491943" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <state key="normal" title="  View Library  ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="P1x-TE-Fog" kind="show" id="I1b-j8-P7g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rZz-8U-MER" firstAttribute="width" secondItem="DMF-Yd-DtZ" secondAttribute="width" id="1uX-8z-9FB"/>
+                                    <constraint firstItem="EMp-EW-vZ5" firstAttribute="width" secondItem="DMF-Yd-DtZ" secondAttribute="width" multiplier="221:485" id="iil-fR-Hwx"/>
+                                    <constraint firstAttribute="width" secondItem="DMF-Yd-DtZ" secondAttribute="height" multiplier="463:485" id="rtm-z4-8Kv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DMF-Yd-DtZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GZf-kY-aKM"/>
+                            <constraint firstItem="RXG-ne-fcm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Uu6-t2-ojd"/>
+                            <constraint firstItem="DMF-Yd-DtZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="Ye2-dM-jWY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RXG-ne-fcm" secondAttribute="trailing" id="Yfi-bh-q9c"/>
+                            <constraint firstItem="DMF-Yd-DtZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="463:600" id="ycr-wu-9Um"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="uir-tJ-QQ5"/>
+                    <connections>
+                        <segue destination="P1x-TE-Fog" kind="show" id="VJZ-kO-YnF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1194" y="437"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="w9H-fX-fh6">
+            <objects>
+                <tableViewController id="P1x-TE-Fog" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mg2-Ec-far">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="A3o-iD-x6u">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A3o-iD-x6u" id="c5T-bc-MB5">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="P1x-TE-Fog" id="haY-sw-L0E"/>
+                            <outlet property="delegate" destination="P1x-TE-Fog" id="9LC-oX-HaT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="leY-sF-YcF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmt-wC-h34" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1816" y="437"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tif-GZ-t1K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rkB-Am-E8u" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kcK-OZ-cjN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zB5-H0-1Rj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OsY-SW-nVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540" y="437"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Book-O-Rama Logo" width="221" height="229"/>
+        <image name="settings" width="96" height="96"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VJZ-kO-YnF"/>
+    </inferredMetricsTieBreakers>
 </document>
