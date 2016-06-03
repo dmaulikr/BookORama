@@ -48,7 +48,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rZz-8U-MER">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rZz-8U-MER">
                                         <rect key="frame" x="0.0" y="339" width="463" height="92"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -70,9 +70,6 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="P1x-TE-Fog" kind="show" id="I1b-j8-P7g"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -129,6 +126,24 @@
             </objects>
             <point key="canvasLocation" x="1816" y="437"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Y9s-c4-Xp1">
+            <objects>
+                <viewController id="KWs-KX-JfF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wd7-au-YgV"/>
+                        <viewControllerLayoutGuide type="bottom" id="8tv-hT-fFv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WWU-Fd-70R">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hOL-8q-QyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="1104"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="tif-GZ-t1K">
             <objects>
@@ -152,7 +167,4 @@
         <image name="Book-O-Rama Logo" width="221" height="229"/>
         <image name="settings" width="96" height="96"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="VJZ-kO-YnF"/>
-    </inferredMetricsTieBreakers>
 </document>
