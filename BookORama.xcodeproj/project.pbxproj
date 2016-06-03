@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AAB9C6DF1D02026800A81101 /* BookAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB9C6DE1D02026800A81101 /* BookAPI.m */; };
 		AAB9C6E11D0206AB00A81101 /* BuzzyBee.csv in Resources */ = {isa = PBXBuildFile; fileRef = AAB9C6E01D0206AB00A81101 /* BuzzyBee.csv */; };
 		AAB9C6E41D020DC700A81101 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB9C6E31D020DC700A81101 /* Book.m */; };
+		AAB9C6E71D02199A00A81101 /* LibraryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB9C6E61D02199A00A81101 /* LibraryTableViewController.m */; };
+		AAB9C6EB1D021A2000A81101 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB9C6E91D021A2000A81101 /* TableViewCell.m */; };
+		AAB9C6EC1D021A2000A81101 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAB9C6EA1D021A2000A81101 /* TableViewCell.xib */; };
+		AAB9C6EF1D02214C00A81101 /* ContentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB9C6EE1D02214C00A81101 /* ContentsViewController.m */; };
 		AAFAF7641D01EAB20021B298 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF7631D01EAB20021B298 /* main.m */; };
 		AAFAF7671D01EAB20021B298 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF7661D01EAB20021B298 /* AppDelegate.m */; };
 		AAFAF76A1D01EAB20021B298 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF7691D01EAB20021B298 /* ViewController.m */; };
@@ -19,11 +22,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AAB9C6DD1D02026800A81101 /* BookAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookAPI.h; sourceTree = "<group>"; };
-		AAB9C6DE1D02026800A81101 /* BookAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookAPI.m; sourceTree = "<group>"; };
 		AAB9C6E01D0206AB00A81101 /* BuzzyBee.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuzzyBee.csv; sourceTree = "<group>"; };
 		AAB9C6E21D020DC700A81101 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		AAB9C6E31D020DC700A81101 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		AAB9C6E51D02199A00A81101 /* LibraryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryTableViewController.h; sourceTree = "<group>"; };
+		AAB9C6E61D02199A00A81101 /* LibraryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryTableViewController.m; sourceTree = "<group>"; };
+		AAB9C6E81D021A2000A81101 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		AAB9C6E91D021A2000A81101 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		AAB9C6EA1D021A2000A81101 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		AAB9C6ED1D02214C00A81101 /* ContentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentsViewController.h; sourceTree = "<group>"; };
+		AAB9C6EE1D02214C00A81101 /* ContentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentsViewController.m; sourceTree = "<group>"; };
 		AAFAF75F1D01EAB10021B298 /* BookORama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookORama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFAF7631D01EAB20021B298 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AAFAF7651D01EAB20021B298 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,11 +78,16 @@
 				AAFAF7661D01EAB20021B298 /* AppDelegate.m */,
 				AAFAF7681D01EAB20021B298 /* ViewController.h */,
 				AAFAF7691D01EAB20021B298 /* ViewController.m */,
-				AAB9C6DD1D02026800A81101 /* BookAPI.h */,
-				AAB9C6DE1D02026800A81101 /* BookAPI.m */,
 				AAB9C6E21D020DC700A81101 /* Book.h */,
 				AAB9C6E31D020DC700A81101 /* Book.m */,
 				AAFAF76B1D01EAB20021B298 /* Main.storyboard */,
+				AAB9C6E51D02199A00A81101 /* LibraryTableViewController.h */,
+				AAB9C6E61D02199A00A81101 /* LibraryTableViewController.m */,
+				AAB9C6E81D021A2000A81101 /* TableViewCell.h */,
+				AAB9C6E91D021A2000A81101 /* TableViewCell.m */,
+				AAB9C6ED1D02214C00A81101 /* ContentsViewController.h */,
+				AAB9C6EE1D02214C00A81101 /* ContentsViewController.m */,
+				AAB9C6EA1D021A2000A81101 /* TableViewCell.xib */,
 				AAFAF76E1D01EAB20021B298 /* Assets.xcassets */,
 				AAFAF7701D01EAB20021B298 /* LaunchScreen.storyboard */,
 				AAFAF7731D01EAB20021B298 /* Info.plist */,
@@ -150,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAFAF7721D01EAB20021B298 /* LaunchScreen.storyboard in Resources */,
+				AAB9C6EC1D021A2000A81101 /* TableViewCell.xib in Resources */,
 				AAFAF76F1D01EAB20021B298 /* Assets.xcassets in Resources */,
 				AAB9C6E11D0206AB00A81101 /* BuzzyBee.csv in Resources */,
 				AAFAF76D1D01EAB20021B298 /* Main.storyboard in Resources */,
@@ -163,9 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAB9C6EF1D02214C00A81101 /* ContentsViewController.m in Sources */,
+				AAB9C6EB1D021A2000A81101 /* TableViewCell.m in Sources */,
 				AAB9C6E41D020DC700A81101 /* Book.m in Sources */,
 				AAFAF76A1D01EAB20021B298 /* ViewController.m in Sources */,
-				AAB9C6DF1D02026800A81101 /* BookAPI.m in Sources */,
+				AAB9C6E71D02199A00A81101 /* LibraryTableViewController.m in Sources */,
 				AAFAF7671D01EAB20021B298 /* AppDelegate.m in Sources */,
 				AAFAF7641D01EAB20021B298 /* main.m in Sources */,
 			);

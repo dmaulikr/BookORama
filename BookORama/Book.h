@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BookAPI.h"
 
 @interface Book : NSObject
 
@@ -15,5 +14,9 @@
 @property (nonatomic, strong) NSString * author;
 @property (nonatomic, strong) NSArray * contentText;
 @property (nonatomic, strong) NSArray * bookContextImages;
+
+- (NSArray *)parseBook:(Book *)book;
+- (NSMutableArray *)parsetext:(NSArray *)array forBook:(Book *)book;
+- (NSMutableArray *)parseImages:(NSArray *)array forBook:(Book *)book;
 
 @end
